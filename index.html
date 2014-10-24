@@ -36,11 +36,11 @@ h1{
         window.location.assign('https://script.google.com/macros/s/AKfycbwfPL5JL2hq2IIf80eIre1j5As6t20-Z4aAMS_6kAJhC5qtz1g/exec');
         var style='display:block;position:relative;left:20%';
         document.getElementById('manualRedirect').setAttribute('style',style);
-      }else{
+      }else if(width>0){
         var style='height:100%;background-color:gray;width:'+width+'%';
         document.getElementById('filledBox').setAttribute('style',style);
         document.getElementById('h1').innerHTML='Redirecting in '+width/10+'s...';
-      }
+      }else{}
     }
   }
   function stopRedirect(){
