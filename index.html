@@ -21,7 +21,7 @@ h1{
 <h1 id='h1'>Redirecting in 10s...</h1>
 <div class='rect'><div id='filledBox' style='height:100%;background-color:gray;width:100%'></div></div>
 <input id='button' class='button' type='button' value='Stop' onclick='return stopRedirect()'/>
-
+<span>If you are not automatically redirected click <a href='https://script.google.com/macros/s/AKfycbwfPL5JL2hq2IIf80eIre1j5As6t20-Z4aAMS_6kAJhC5qtz1g/exec' target='_self'>here.</a></span>
 <script>
 
     var doRedirect=true;
@@ -32,7 +32,7 @@ h1{
   function timer(){
     if(doRedirect){
       width-=10;
-      if(width<0){
+      if(width==0){
         window.location.assign('https://script.google.com/macros/s/AKfycbwfPL5JL2hq2IIf80eIre1j5As6t20-Z4aAMS_6kAJhC5qtz1g/exec')
       }else{
         var style='height:100%;background-color:gray;width:'+width+'%';
